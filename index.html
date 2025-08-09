@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Photography</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="logo">My Photography</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#photos">All Photos</a>
+      <a href="#videos">All Videos</a>
+      <div class="dropdown">
+        <button class="dropbtn">Trips ▾</button>
+        <div class="dropdown-content">
+          <a href="#skiing">Skiing 2025</a>
+          <a href="#beach">Beach 2024</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <h1>Capturing the World, One Frame at a Time</h1>
+  </section>
+
+  <!-- ALL PHOTOS -->
+  <section id="photos" class="gallery">
+    <h2>All Photos</h2>
+    <div class="grid">
+      <img src="https://source.unsplash.com/random/800x600?nature" alt="Photo 1"/>
+      <img src="https://source.unsplash.com/random/801x600?nature" alt="Photo 2"/>
+      <img src="https://source.unsplash.com/random/802x600?nature" alt="Photo 3"/>
+      <img src="https://source.unsplash.com/random/803x600?nature" alt="Photo 4"/>
+    </div>
+  </section>
+
+  <!-- ALL VIDEOS -->
+  <section id="videos" class="gallery">
+    <h2>All Videos</h2>
+    <div class="grid">
+      <div class="video-thumb" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">
+        <img src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg" alt="Video 1"/>
+      </div>
+      <div class="video-thumb" data-video="https://www.youtube.com/embed/tgbNymZ7vqY">
+        <img src="https://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg" alt="Video 2"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKIING TRIP -->
+  <section id="skiing" class="gallery">
+    <h2>Skiing 2025</h2>
+    <div class="grid">
+      <img src="https://source.unsplash.com/random/804x600?snow" alt="Skiing Photo"/>
+      <div class="video-thumb" data-video="https://www.youtube.com/embed/aqz-KE-bpKQ">
+        <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="Skiing Video"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEACH TRIP -->
+  <section id="beach" class="gallery">
+    <h2>Beach 2024</h2>
+    <div class="grid">
+      <img src="https://source.unsplash.com/random/805x600?beach" alt="Beach Photo"/>
+      <div class="video-thumb" data-video="https://www.youtube.com/embed/Zi_XLOBDo_Y">
+        <img src="https://img.youtube.com/vi/Zi_XLOBDo_Y/hqdefault.jpg" alt="Beach Video"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <div class="lightbox-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
